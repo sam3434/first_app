@@ -3,6 +3,10 @@ before_filter :authenticate, :except=>[:show, :new, :create]
 before_filter :correct_user, :only => [:edit, :update]
 before_filter :admin_user, :only=> :destroy
 before_filter :no_register, :only=>[:new, :create]
+
+def a
+end
+
   def new
 @user=User.new
 #@title="Sign up"
